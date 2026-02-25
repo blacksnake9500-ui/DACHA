@@ -1,0 +1,656 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Betania+Patmos+In&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Allison&display=swap");
+
+// font-family: "Allison", cursive;
+
+// font-family: "Betania Patmos In", cursive;
+
+//  font-family: "Playfair Display", serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+ul {
+  list-style: none;
+}
+
+header {
+  background-image: url("../imgs/hero\ bg\ img.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll; /* default */
+  background-attachment: local;
+  background-attachment: fixed;
+  background-size: cover;
+  nav {
+    .container {
+      padding: 30px 0px;
+      color: white;
+      .nav_top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        ul {
+          display: flex;
+          align-items: center;
+          gap: 30px;
+          li {
+            position: relative;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            &:hover {
+              color: #0099a3;
+            }
+            &::after {
+              content: "";
+              position: absolute;
+              transition: all 0.3s ease;
+              background-color: #0099a3;
+              width: 0;
+              height: 2px;
+              left: 50%;
+              transform: translate(-50%);
+              bottom: -5px;
+            }
+            &:hover::after {
+              width: 100%;
+            }
+          }
+        }
+      }
+      .nav_bottom {
+        padding-top: 25px;
+        ul {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 50px;
+          li {
+            position: relative;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            &:hover {
+              color: #0099a3;
+            }
+            &::after {
+              content: "";
+              position: absolute;
+              transition: all 0.3s ease;
+              background-color: #0099a3;
+              width: 0;
+              height: 2px;
+              left: 50%;
+              transform: translate(-50%);
+              bottom: -5px;
+            }
+            &:hover::after {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .hero {
+    .container {
+      text-align: center;
+      padding: 100px 0px;
+      color: white;
+      h1 {
+        font-family: "Playfair Display", serif;
+        font-size: 48px;
+        padding-bottom: 10px;
+      }
+      h2 {
+        font-family: "Betania Patmos In", cursive;
+        font-size: 32px;
+        padding-bottom: 50px;
+        color: white;
+      }
+
+      .bottom {
+        padding-top: 50px;
+        ul {
+          &:nth-of-type(1) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            background-color: #0099a3;
+            padding: 10px 20px;
+            margin: 0px 400px;
+            color: white;
+            li {
+              position: relative;
+              transition: all 0.3s ease;
+              cursor: pointer;
+              &::after {
+                position: absolute;
+                transition: all 0.3s ease;
+                content: "";
+                width: 0;
+                height: 2px;
+                bottom: -5px;
+                left: 50%;
+                transform: translate(-50%);
+                background-color: white;
+              }
+              &:hover::after {
+                width: 100%;
+              }
+            }
+          }
+        }
+        ul {
+          &:nth-of-type(2) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            padding: 30px;
+            border: 1px solid;
+            margin: 0px 200px;
+            color: #4b4b4b;
+            background-color: #ffffff93;
+            li {
+              border-right: 1px solid gray;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+main {
+  background-image: url("../imgs/main\ bg\ img.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll; /* default */
+  background-attachment: local;
+  background-attachment: fixed;
+  background-size: cover;
+
+  .s1 {
+    background-color: rgba(255, 255, 255, 0.521);
+    .container {
+      .s1_title {
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 30px;
+        h1 {
+          font-family: "Betania Patmos In", cursive;
+          font-weight: 400;
+        }
+      }
+
+      .box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 50px;
+        position: relative;
+        .arrow {
+          position: absolute;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          right: 0px;
+          left: 10px;
+          gap: 1210px;
+          top: 120px;
+          font-size: 40px;
+          color: white;
+        }
+        .card {
+          width: 270px;
+          transition: all 0.3s ease;
+          background-color: white;
+          cursor: pointer;
+          &:hover {
+            transform: scale(1.05);
+          }
+          img {
+            width: 100%;
+          }
+          .info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .info1 {
+              h3 {
+                font-family: "Betania Patmos In", cursive;
+                padding: 10px 0px;
+              }
+            }
+            .info2 {
+              h2 {
+                font-weight: 300;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                span {
+                  font-size: 10px;
+                  display: flex;
+                  align-items: center;
+                  padding-top: 40px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .s2 {
+    background-color: rgba(255, 255, 255, 0.582);
+    background-attachment: scroll; /* default */
+    background-attachment: local;
+    background-attachment: fixed;
+    .container {
+      padding: 0px 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      position: relative;
+      video {
+        width: 1000vh;
+        height: 100%;
+        object-fit: cover;
+      }
+      .circle {
+        text-align: center;
+        position: absolute;
+        left: 530px;
+        bottom: 320px;
+        color: rgba(255, 255, 255, 0.13);
+        width: 117px;
+        height: 117px;
+        border: 2px solid;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+        &:hover {
+          color: white;
+          transform: scale(1.1);
+        }
+        &:active {
+          transform: scale(0.9);
+        }
+        i {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+
+  .s3 {
+    background-color: rgba(255, 255, 255, 0.418);
+    .container {
+      padding: 50px 0px;
+      .s3_title {
+        text-align: center;
+        padding: 50px 0px;
+        color: white;
+        h1 {
+          font-family: "Betania Patmos In", cursive;
+        }
+      }
+
+      .box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .card {
+          width: 288px;
+          border: 1px solid;
+          text-align: center;
+          padding: 20px;
+          background-color: rgba(255, 255, 255, 0.507);
+          cursor: pointer;
+          transition: all 0.3s ease;
+          &:hover {
+            transform: scale(1.05);
+          }
+          &:active {
+            transform: scale(0.9);
+          }
+          i {
+            font-size: 30px;
+            padding: 15px;
+            padding-top: 30px;
+          }
+          h2 {
+            font-family: "Playfair Display", serif;
+            padding: 15px;
+          }
+          p {
+            padding: 20px 40px;
+          }
+        }
+      }
+    }
+  }
+
+  .s4 {
+    background-color: rgba(255, 255, 255, 0.418);
+    .container {
+      padding: 50px;
+      .s4_title {
+        text-align: center;
+        padding: 30px;
+        h1 {
+          font-family: "Betania Patmos In", cursive;
+        }
+      }
+
+      .box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 200px;
+        .box1 {
+          width: 347px;
+          height: 300px;
+          padding: 10px;
+          position: relative;
+          transition: all 0.3s ease;
+          &:hover {
+            transform: scale(1.02);
+          }
+          img {
+            width: 170%;
+          }
+          .info {
+            background-color: rgba(255, 255, 255, 0.76);
+            position: absolute;
+            top: 10px;
+            padding: 30px 10px;
+            width: 100%;
+            h3 {
+              font-family: "Betania Patmos In", cursive;
+              padding-bottom: 20px;
+            }
+            p {
+              font-size: 12px;
+            }
+          }
+
+          .arrow {
+            position: absolute;
+            bottom: 50px;
+            right: 40px;
+            border: 1px solid white;
+            color: white;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            &:hover {
+              transform: scale(1.1);
+            }
+            i {
+              font-size: 30px;
+            }
+          }
+        }
+
+        .box2 {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 30px;
+          flex-wrap: wrap;
+          .card {
+            width: 304px;
+            position: relative;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            &:hover {
+              transform: scale(1.1);
+            }
+            img {
+              width: 100%;
+            }
+            .info {
+              background-color: rgba(255, 255, 255, 0.801);
+              position: absolute;
+              bottom: 4px;
+              padding: 15px;
+              width: 250px;
+              h3 {
+                font-size: 20px;
+                font-family: "Betania Patmos In", cursive;
+              }
+              p {
+                font-size: 10px;
+                padding-top: 10px;
+                font-weight: 300;
+              }
+            }
+            .arrow {
+              font-size: 30px;
+              position: absolute;
+              right: 10px;
+              bottom: 20px;
+              width: 40px;
+              height: 40px;
+              color: white;
+              border: 1px solid;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 50%;
+              i {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .s5 {
+    background-color: rgba(255, 255, 255, 0.418);
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 50px 0px;
+      form {
+        text-align: center;
+        width: 477px;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.699);
+        transition: all 0.3s ease;
+        cursor: pointer;
+        gap: 30px;
+        &:hover {
+          transform: scale(1.05);
+        }
+        input {
+          width: 351px;
+          padding: 10px 20px;
+          background-color: rgba(255, 255, 255, 0.527);
+          border: none;
+          outline: 1px solid #0099a3;
+        }
+        button {
+          padding: 10px 20px;
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+          margin-bottom: 50px;
+          margin-top: 50px;
+        }
+        .form_title {
+          padding: 10px 0px;
+          padding-top: 70px;
+          text-align: center;
+          h1 {
+            font-family: "Playfair Display", serif;
+            font-size: 24px;
+          }
+          p {
+            padding: 20px 50px;
+          }
+        }
+      }
+
+      .box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+        width: 477px;
+        .box_title {
+          padding: 30px 0px;
+          padding: 10px 40px;
+          padding-bottom: 20px;
+          p {
+            padding: 10px 40px;
+            font-weight: 300;
+          }
+          h1 {
+            font-family: "Betania Patmos In", cursive;
+            padding: 10px 40px;
+          }
+        }
+        .card {
+          width: 190px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.3s ease;
+          cursor: pointer;
+          overflow: hidden;
+          &:hover {
+            transform: scale(1.2);
+          }
+          gap: 10px;
+          &:hover .info {
+            transform: translateY(0);
+          }
+          .info {
+            transition: all 0.3s ease;
+            transform: translateY(-500px);
+            cursor: pointer;
+            h4 {
+              font-size: 12px;
+            }
+            p {
+              font-size: 12px;
+            }
+          }
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .s6 {
+    background-color: rgba(255, 255, 255, 0.767);
+    .container {
+      padding: 20px;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .info {
+        display: flex;
+        width: 600px;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        button {
+          padding: 5px 5px;
+          border: none;
+          background-color: #0099a3;
+          color: white;
+          margin-left: 140px;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          &:hover {
+            color: black;
+            background-color: transparent;
+            transform: scale(1.1);
+          }
+          &:active {
+            transform: scale(0.9);
+          }
+        }
+        h1 {
+          font-family: "Betania Patmos In", cursive;
+        }
+        p {
+          padding: 10px 100px;
+        }
+      }
+    }
+  }
+
+  .s7 {
+    background-color: rgba(255, 255, 255, 0.418);
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      .info {
+        h1 {
+          font-size: 128px;
+          font-weight: 400;
+          font-family: "Playfair Display", serif;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        ul {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 50px;
+        }
+      }
+      .bottom {
+        text-align: center;
+        font-weight: 300;
+        padding-top: 50px;
+        padding-bottom: 15px;
+      }
+    }
+  }
+}
